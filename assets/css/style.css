@@ -1,0 +1,22 @@
+.button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.container {
+    margin-top: 12px;
+}
+
+.custom-card {
+    width: 25%;
+    margin: 12px;
+}
+
+.custom-container {
+    margin-top: 0px;
+}
+
+.custom-header {
+    margin-top: 24px;
+    margin-bottom: 12px !important;
+}
