@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
-    
+  <section class="hero is-info">
+    <div class="hero-body">
+      <p class="title">
+        Weather Dashboard
+      </p>
+      <p class="subtitle">
+        Find the current weather & 5 day forecast
+      </p>
+    </div>
+  </section>
+    <!-- Search Container -->
+  <div class="container">
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="box">
+                <h1 class="title">Search for a city</h1>
+                <input id="user-input" class="input" type="text" placeholder="Enter a city name">
+                <button id="search-button" class="button is-info">Search</button>
+            </div>
+              <!-- Empty history for displaying local Storage -->
+            <div id="history-container" class="box is-flex is-flex-direction-column">
+                <h1 class="title">Search History</h1>
+            </div>
+        </div>
+        <!-- Empty containers for forecast from JS -->
+        <div class="column">
+            <div id="output">
+            </div>
+            <div id="five-day-output" class="custom-container">
+            </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
